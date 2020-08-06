@@ -1,0 +1,481 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  black;
+    
+}
+.navbar
+{
+    height:35px;
+    background-color: green;
+    overflow: hidden;
+}
+
+h1 {
+    float: left;
+}
+
+li {
+    list-style: none;
+    float: right;
+    font-size: 30px;
+}
+.firstlink, .secondlink, .thirdlink {
+    padding-right: 10%;
+}
+
+.fourthlink {
+    padding: 0 10px;
+}
+
+/* links */ 
+a:visited {
+    outline: none;
+    color: wheat;
+    text-decoration: none;
+}
+
+a{
+    color: orange;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+
+}
+/* Home page */
+/* puts first three images into row in close to equal size */
+.imgs {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.differentshoes, .shoestore {
+    min-width: 30%;
+    max-width: 30%;
+}
+.multipleshoes {
+    min-width: 37%;      
+}
+
+.shoestore {
+    min-width: 33%;
+    max-width: 33%;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;    
+} 
+.runningdescription, .dressdescription, .casualdescription, .sportdescription {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.description img {
+    min-width: 25%;
+    justify-content: center;
+    height: 500px;
+}
+.description h2 {
+    text-align: center;
+    background-color: blue;
+}
+ .description p {
+    color: white;
+    font-weight: bolder;
+    font-size: 19.5px;
+    padding: 0px 2px;
+}   
+
+.description a {
+    color: black;
+}
+.description a:hover {
+    color: white;
+}
+/* running page */
+.marathon {
+    height: 800px;
+    width: 100%;
+    overflow: auto;
+}
+
+.runcolumn {
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+}
+
+/*running shoes */
+.runcolumn .row {
+    display: flex;
+    flex-direction: row;
+    max-height: 400px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.rs1, .rs2 {
+    min-width: 33%; 
+    max-width: 33%;
+}
+.rs3 {
+    width: 35%; 
+}
+
+.rs1:hover, .rs2:hover, .rs3:hover {
+    cursor: pointer;
+}
+
+/* shoe color headers */
+.runcolumn h1 {
+    min-height: 43px;
+    text-align: center;
+    background-color: black;
+}
+
+.greenheader {
+    color: green;
+}
+
+.orangeheader {
+    color: orange;
+}
+
+.blueheader {
+    color: blue;
+}
+
+
+/* dress shoes page */
+.dress {
+    background-color: rgb(124, 18, 18);
+}
+.wedding {
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dressrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.dressrow .column {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: right;
+    max-height: 600px;
+}
+.dressrow .column h2 {
+    text-align: center;
+    background-color: rgb(124, 18, 18);
+    font-size: 32px;
+}
+
+.dressrow .column img {
+    height: 33%;
+}
+
+.colors {
+    height: 622px;
+    width: 10%;
+    background-color: rgb(124, 18, 18);
+    color: black;
+}
+
+.colors .black, .colors .brown{
+    font-size: 32px;
+    text-align: right;
+    padding: 85px 0px;
+    letter-spacing: 5px;   
+}
+
+.colors .black {
+    letter-spacing: 8px;
+}
+
+.colors .white {
+    font-size: 32px;
+    text-align: right;
+    padding: 60px 0px;
+    letter-spacing: 9px;
+}
+
+.colorblack {
+    max-height: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    background-color: black;
+    margin: 90px 45px;
+}
+
+.colorbrown {
+    max-height: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    background-color: rgb(139,69,19);
+    margin: 150px 45px;
+}
+
+.colorwhite {
+    max-height: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    background-color: white;
+    margin: 0px 45px;
+}
+
+.colorsright {
+    height: 622px;
+    width: 10%;
+    background-color: rgb(124, 18, 18);
+}
+
+/* Sports Page */
+.question {
+    float: left;
+    color: rgb(168, 152, 152);
+    background-color: white;
+}
+.answer {
+    margin: 0px 200px;
+    width: 280px;
+    border: black;
+}
+.enter h2 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 1px;
+}
+
+.enter {
+    width: 200px;
+    max-height: 22px;
+    color: white;
+    background-color: black;
+    border: black;
+    float: right;
+}
+
+.enter:hover {
+    cursor: pointer;
+}
+
+.bg {
+    min-height: 800px;
+    max-height: 800px;
+    background: url('../img/sport7.jpg');
+}
+
+.baseball {
+    min-height: 800px;
+    max-height: 800px; 
+    background: url('../img/sport3.jpeg');
+}
+
+.basketball {
+    min-height: 800px;
+    max-height: 800px;
+    background: url('../img/sport2.jpeg') no-repeat center/cover;
+}
+
+.soccer {
+    min-height: 800px;
+    max-height: 800px;
+    background: url('../img/sport1.jpeg') no-repeat center/cover;
+}
+
+.sportimg {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sportimg1 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport1.jpeg') no-repeat center/cover; 
+}
+.sportimg2 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport2.jpeg') no-repeat center/cover; 
+}
+.sportimg3 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport3.jpeg') no-repeat center/cover;   
+}
+
+.basketballimg1 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 34%;
+    max-width: 34%;
+    background: url('../img/sport9.jpeg') no-repeat center/cover; 
+}
+
+.basketballimg2 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport12.jpg') no-repeat center/cover; 
+}
+
+.basketballimg3 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport13.jpg') no-repeat center/cover; 
+}
+
+.soccerimg1 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport8.jpeg') no-repeat center/cover; 
+}
+
+.soccerimg2 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 34%;
+    max-width: 34%;
+    background: url('../img/sport10.jpeg') no-repeat center/cover; 
+}
+
+.soccerimg3 {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport11.jpg') no-repeat center/cover; 
+}
+
+.baseballimg1 {
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport4.jpg') no-repeat center/cover; 
+}
+
+.baseballimg2 {
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 34%;
+    max-width: 34%;
+    background: url('../img/sport5.jpeg') no-repeat center/cover; 
+}
+
+.baseballimg3 {
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 33%;
+    max-width: 33%;
+    background: url('../img/sport6.jpg') no-repeat center/cover; 
+}
+
+/* Casual Page */
+.casualrow1, .casualrow2, .casualrow3 {
+    display: flex;
+    flex-direction: row;
+    min-height: 602.4px;
+    max-height: 602.4px;
+}
+.casualrow1 div, .casualrow2 div, .casualrow3 div {
+    min-height: 600px;
+    min-width: 33.2%;
+    max-height: 600px;
+}
+span {
+    min-height: 2.4px;
+    max-height: 2.4px;
+    min-width: .2%;
+    max-width: .2%;
+}
+/* button that generates random shoe image */
+.btn {
+    display:block;
+    width: 215px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+    margin: 559.8px 0px;
+   }
+.casualimg1{
+    background: url('../img/casual1.jpeg') no-repeat center;
+}
+.casualimg2{
+    background: url('../img/casual2.jpeg') no-repeat center/cover;
+}
+.casualimg3{
+    background: url('../img/casual3.jpeg') no-repeat center;
+}
+.casualimg4{
+    background: url('../img/casual4.jpeg') no-repeat center;
+}
+.casualimg5{
+    background: url('../img/casual5.jpeg') no-repeat center/cover;
+}
+.casualimg5-1{
+    background: url('../img/casual10.jpeg') no-repeat center;
+}
+.casualimg5-2{
+    background: url('../img/casual11.jpg') no-repeat center/cover;
+}
+.casualimg5-3{
+    background: url('../img/casual12.jpg') center/cover;
+    background-size: 180%;
+}
+.casualimg5-4{
+    background: url('../img/casual13.jpg') no-repeat center/cover;
+}
+.casualimg5-5{
+    background: url('../img/casual14.jpg') no-repeat center/cover;
+}
+
+.casualimg6{
+    background: url('../img/casual6.jpeg') no-repeat center/cover;
+}
+.casualimg7{
+    background: url('../img/casual7.jpeg') no-repeat center;
+}
+.casualimg8{
+    background: url('../img/casual8.jpeg') no-repeat center/cover;
+}
+.casualimg9{
+    background: url('../img/casual9.jpeg') no-repeat center/cover;
+}
+
